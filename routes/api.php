@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\Players;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,3 +32,4 @@ Route::group(["prefix" => "players"], function () {
     Route::delete("{player}", [Players::class, "destroy"]);
     Route::patch("{player}", [Players::class, "update"]);
     Route::get("teams", [Players::class, "assign"]);
+});
