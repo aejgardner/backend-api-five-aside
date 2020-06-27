@@ -19,9 +19,7 @@ class MatchResource extends JsonResource
             "team_one_name" => $this->team_one_name,
             "team_one_score" => $this->team_one_score,
             "team_two_name" => $this->team_two_name,
-            "team_two_score" => $this->team_two_score,
-            "team_one_players" => $this->team_one_players,
-            "team_two_players" => $this->team_two_players,
+            "team_two_score" => $this->team_two_score
         ];
     }
 }
