@@ -5,6 +5,10 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+use App\Player;
+
+use App\Http\Requests\API\PlayerRequest;
+
 class Players extends Controller
 {
     /**
