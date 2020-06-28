@@ -18,11 +18,7 @@ All requests should:
 
 ## Requests 
 
-<<<<<<< HEAD
 ### POST /players
-=======
-```### POST /players```
->>>>>>> 5a93f6819c7a4839fdb3acf604fe8bd96af90956
 
 Will create a new player.
 
@@ -31,14 +27,13 @@ Request
 * player_name, string (max 30)
 * player_rating, integer 
 
-<<<<<<< HEAD
 ### GET /players
 
 Will return a list of players.
 
 ### DELETE /players
 
-Will delete all players
+Will delete all players.
 
 ### PATCH players/{player}
 
@@ -53,29 +48,6 @@ Will delete the player with the specified id.
 Will return a list of players with a team number specified for each one (either 1 or 2).
 
 ### POST /previous-matches
-=======
-```### GET /players```
-
-Will return a list of players.
-
-```### DELETE /players```
-
-Will delete all players
-
-```### PATCH players/{player}```
-
-Will update the player with the specified id.
-
-```### DELETE players/{player}```
-
-Will delete the player with the specified id.
-
-```### GET players/teams```
-
-Will return a list of players with a team number specified for each one (either 1 or 2).
-
-```### POST /previous-matches```
->>>>>>> 5a93f6819c7a4839fdb3acf604fe8bd96af90956
 
 Will create a new match.
 
@@ -86,19 +58,11 @@ Request
 * team_two_name, string (max 50)
 * team_two_score, integer
 
-<<<<<<< HEAD
 ### GET /previous-matches
 
 Will return a list of all matches.
 
 ### DELETE /previous-matches
-=======
-```### GET /previous-matches```
-
-Will return a list of all matches.
-
-```### DELETE /previous-matches```
->>>>>>> 5a93f6819c7a4839fdb3acf604fe8bd96af90956
 
 Will delete all matches.
 
@@ -106,18 +70,18 @@ Will delete all matches.
 
 This API was created using Laravel. The virtual machine is configured from ScotchBox and the Vagrant Box uses Laravel's Homestead. Follow these steps to install the project:
 
-Cd into the directory where you would like the project to be saved
-Clone the GitHub repository
-cd into the folder created
-Run vendor/bin/homestead make
-Copy the .env.example file to a new .env file by running cp .env.example .env
-Change db name and password in the .env file
-Run vagrant up
-Run vagrant ssh
-cd code
-Generate artisan key: art key:generate
-Run database migration art migrate
-Any changes should be made in a feature branch, and then a pull request made to merge into master. This will require collaborator credentials for this repository.
+* Cd into the directory where you would like the project to be saved
+* Clone the GitHub repository
+* cd into the folder created
+* Run vendor/bin/homestead make
+* Copy the .env.example file to a new .env file by running cp .env.example .env
+* Change db name and password in the .env file
+* Run vagrant up
+* Run vagrant ssh
+* cd code
+* Generate artisan key: art key:generate
+* Run database migration art migrate
+* Any changes should be made in a feature branch, and then a pull request made to merge into master. This will require collaborator credentials for this repository.
 
 To make changes to the production version, the user must have a Heroku account and be listed as a collaborator on Heroku. Changes are made to the project on the Heroku server by pushing the git repository to the Heroku server.
 
