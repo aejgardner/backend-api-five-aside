@@ -18,7 +18,11 @@ All requests should:
 
 ## Requests 
 
+<<<<<<< HEAD
 ### POST /players
+=======
+```### POST /players```
+>>>>>>> 5a93f6819c7a4839fdb3acf604fe8bd96af90956
 
 Will create a new player.
 
@@ -27,6 +31,7 @@ Request
 * player_name, string (max 30)
 * player_rating, integer 
 
+<<<<<<< HEAD
 ### GET /players
 
 Will return a list of players.
@@ -48,6 +53,29 @@ Will delete the player with the specified id.
 Will return a list of players with a team number specified for each one (either 1 or 2).
 
 ### POST /previous-matches
+=======
+```### GET /players```
+
+Will return a list of players.
+
+```### DELETE /players```
+
+Will delete all players
+
+```### PATCH players/{player}```
+
+Will update the player with the specified id.
+
+```### DELETE players/{player}```
+
+Will delete the player with the specified id.
+
+```### GET players/teams```
+
+Will return a list of players with a team number specified for each one (either 1 or 2).
+
+```### POST /previous-matches```
+>>>>>>> 5a93f6819c7a4839fdb3acf604fe8bd96af90956
 
 Will create a new match.
 
@@ -58,11 +86,19 @@ Request
 * team_two_name, string (max 50)
 * team_two_score, integer
 
+<<<<<<< HEAD
 ### GET /previous-matches
 
 Will return a list of all matches.
 
 ### DELETE /previous-matches
+=======
+```### GET /previous-matches```
+
+Will return a list of all matches.
+
+```### DELETE /previous-matches```
+>>>>>>> 5a93f6819c7a4839fdb3acf604fe8bd96af90956
 
 Will delete all matches.
 
